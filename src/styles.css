@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.App {
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  line-height: 0;
+  margin-bottom: 70px;
+  font-size: 25px;
+}
+.filter-area {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+}
+.filter-area * {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none !important;
+  margin-bottom: 10px;
+}
+.filter-area input,
+.filter-area select {
+  border: 1px solid lightgray;
+  padding: 5px 20px;
+}
+.reset-btn {
+  background: url(https://uploads.codesandbox.io/uploads/user/d0de6fbb-a790-48e7-8bf7-3447961b4597/cUcr-iconfinder_icon-ios7-refresh-empty_211812.svg)
+    no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  cursor: pointer;
+  border: none;
+}
+.data_table {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+.header {
+  display: flex;
+  flex-flow: row wrap;
+}
+.header > div,
+.data_row > div {
+  padding: 5px 10px;
+  text-align: left;
+  border-bottom: 1px solid #cac0bb;
+  font-size: 13px;
+}
+.header > div:nth-child(1) {
+  width: 25%;
+  background: #e0d5d5;
+  border-right: 1px solid #cac0bb;
+}
+.header > div:nth-child(2) {
+  width: 75%;
+  background: #e0d5d5;
+}
+.data_row > div:nth-child(1) {
+  width: 25%;
+  background: rgba(242, 244, 247, 0.47);
+  border-right: 1px solid #cac0bb;
+}
+.data_row > div:nth-child(2) {
+  width: 75%;
+  background: rgba(242, 244, 247, 0.47);
+}
+.data_row {
+  display: flex;
+  flex-flow: row wrap;
+}
+.category {
+  margin-top: 15px;
+  display: block;
+}
+.note {
+  font-size: 12px;
+  margin-top: 30px;
+  color: chocolate;
+}
